@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputfeet" type="text" placeholder="feet" oninput="xulychuyenfeet(this.value)"
+        onchange="xulychuyenfeet(this.value)">
+    <p id="result"></p>
+    <input id="inputmeters" type="text" placeholder="metter" oninput="xulychuyenmeters(this.value)"
+        onchange="xulychuyenmeters(this.value)">
+    <p id="result1"></p>
+
+    <script>
+        function xulychuyenfeet(feet) {
+            let result = document.getElementById('result')
+            meter = 0.305 * feet
+            return result.innerText = 'Meters: ' + meter;
+        }
+        function xulychuyenmeters(meter) {
+            let result = document.getElementById('result1')
+            feet = 3.279 * meter 
+            return result.innerText = 'Feet: ' + feet;
+        }
+    </script>
+</body>
+
+</html>
